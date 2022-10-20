@@ -74,7 +74,7 @@ const App = () => {
       setAnimating(true);
       setTimeout(() => {
         shuffledMemoBlocksCopy.splice(memoBlock.index, 1, memoBlock);
-        shuffledMemoBlocksCopy.splice(selectedMemoBlock, 1, selectedMemoBlock);
+        shuffledMemoBlocksCopy.splice(selectedMemoBlock.index, 1, selectedMemoBlock);
         setShuffledMemoBlocks(shuffledMemoBlocksCopy);
         setSelectedMemoBlock(null);
         setAnimating(false);
